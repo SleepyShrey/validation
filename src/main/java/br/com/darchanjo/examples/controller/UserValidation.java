@@ -60,6 +60,7 @@ public class UserValidation {
 
         if (user != null)
         {
+
             // Send DELETE request to the external CRUD app
             ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.DELETE, null, String.class);
             if(response.getStatusCode().is2xxSuccessful()) {
