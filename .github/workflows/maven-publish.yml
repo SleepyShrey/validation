@@ -31,9 +31,9 @@ jobs:
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_HUB_NAME }} -p ${{ secrets.DOCKER_HUB_TOKEN }}
       - name: Build Docker Image
-        run: docker build -t shreyasbharadwaj21/user:latest .
+        run: docker build -t shreyasbharadwaj21/validation:latest .
       - name: Publish Docker image
-        run: docker push shreyasbharadwaj21/user
+        run: docker push shreyasbharadwaj21/validation
 
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
