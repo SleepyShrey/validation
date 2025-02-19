@@ -1,9 +1,0 @@
-<settings>
-    <servers>
-        <server>
-            <id>github</id> <!-- This must match the 'id' in your pom.xml -->
-            <username>SleepyShrey</username> <!-- Your GitHub username -->
-            <password>${env.GITHUB_TOKEN}</password> <!-- The GitHub token environment variable -->
-        </server>
-    </servers>
-</settings>
